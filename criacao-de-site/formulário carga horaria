@@ -1,0 +1,54 @@
+Adicionando atividades de criação de sites
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="msgsubmit.html" method="get ou post">
+      <p>
+        <label for="cnome"> Nome:</label>
+        <input
+          type="text"
+          name="nome"
+          id="cnome"
+          size="50"
+          maxlength="40"
+          placeholder="Nome completo"
+          required
+        />
+      </p>
+      <p>
+        <label> Senha:</label>
+        <input type="password" name="senha" size="15" minlength="8" />
+      </p>
+      <p><input type="submit" value="Enviar Dados" /></p>
+    </form>
+  </body>
+</html>
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultado</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Cadastro realizado com sucesso!</h1>
+  </body>
+</html>
