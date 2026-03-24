@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inscrição no Torneio</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        margin: 20px;
+        font-size: 17px;
+      }
+
+      h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      nav {
+        text-align: center;
+        margin: 15px 0;
+      }
+
+      nav a {
+        margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      fieldset {
+        background-color: #111;
+        border: 1px solid #333;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+
+      legend {
+        font-size: 0.85rem;
+        color: #fff;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="date"],
+      input[type="number"],
+      input[type="file"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 7px;
+        margin-top: 4px;
+        border: 1px solid #333;
+        border-radius: 3px;
+        font-size: 1em;
+        box-sizing: border-box;
+        background-color: #1a1a1a;
+        color: #fff;
+      }
+
+      select option {
+        background-color: #1a1a1a;
+        color: #fff;
+      }
+
+      .inline-options label {
+        display: inline;
+        font-weight: normal;
+        margin-left: 5px;
+        margin-right: 15px;
+        color: #fff;
+      }
+
+      .inline-options {
+        margin-top: 8px;
+      }
+
+      .btn-row {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      button {
+        padding: 10px 25px;
+        margin: 5px;
+        font-size: 1em;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+      }
+
+      .btn-enviar {
+        background-color: #00ccff;
+        color: #000;
+      }
+
+      .btn-limpar {
+        background-color: #444;
+        color: #fff;
+      }
+
+      .btn-voltar {
+        background-color: #222;
+        color: #fff;
+        border: 1px solid #444;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #fff;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Inscrição no Torneio de Games</h1>
+
+    <nav>
+      <a href="pagina1_games.html">← Voltar ao Início</a>
+      <a href="pagina2_torneio.html">Inscrição</a>
+    </nav>
+
+    <form action="#" method="post">
+      <!-- DADOS PESSOAIS -->
+      <fieldset>
+        <legend>Dados do Jogador</legend>
+
+        <label for="nome">Nome Completo:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+          required
+        />
+
+        <label for="nickname">Nickname (apelido no jogo):</label>
+        <input
+          type="text"
+          id="nickname"
+          name="nickname"
+          placeholder="Seu apelido"
+          required
+        />
+
+        <label for="dataNasc">Data de Nascimento:</label>
+        <input type="date" id="dataNasc" name="dataNasc" required />
+      </fieldset>
+
+      <!-- ACESSO -->
+      <fieldset>
+        <legend>Acesso à Plataforma</legend>
+
+        <label for="senha">Senha de Acesso:</label>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder="Mínimo 8 caracteres"
+          required
+        />
+      </fieldset>
+
+      <!-- PREFERÊNCIAS -->
+      <fieldset>
+        <legend>Preferências de Jogo</legend>
+
+        <label for="jogo">Jogo Principal:</label>
+        <select id="jogo" name="jogo" required>
+          <option value="">-- Selecione --</option>
+          <option value="fortnite">Fortnite</option>
+          <option value="valorant">Valorant</option>
+          <option value="lol">League of Legends</option>
+          <option value="cs2">CS2</option>
+          <option value="pubg">PUBG</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label>Modalidade:</label>
+        <div class="inline-options">
+          <input
+            type="radio"
+            id="solo"
+            name="modalidade"
+            value="solo"
+            required
+          />
+          <label for="solo">Solo</label>
+          <input type="radio" id="duo" name="modalidade" value="duo" />
+          <label for="duo">Duo</label>
+          <input type="radio" id="squad" name="modalidade" value="squad" />
+          <label for="squad">Squad</label>
+        </div>
+
+        <label for="corAvatar">Cor do Avatar:</label>
+        <input type="color" id="corAvatar" name="corAvatar" value="#00ccff" />
+      </fieldset>
+
+      <!-- EXTRAS -->
+      <fieldset>
+        <legend>Informações Extras</legend>
+
+        <label for="descricao">Fale sobre sua experiência nos jogos:</label>
+        <textarea
+          id="descricao"
+          name="descricao"
+          rows="4"
+          placeholder="Quantos anos joga? Já participou de torneios?"
+        ></textarea>
+
+        <label for="screenshot">Envie um print do seu Rank:</label>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*" />
+
+        <br /><br />
+        <input type="checkbox" id="termos" name="termos" required />
+        <label for="termos" style="display: inline; font-weight: normal">
+          Li e aceito os termos e condições do torneio.
+        </label>
+      </fieldset>
+
+      <!-- BOTÕES -->
+      <div class="btn-row">
+        <button type="submit" class="btn-enviar">Enviar Inscrição</button>
+        <button type="reset" class="btn-limpar">Limpar</button>
+        <button
+          type="button"
+          class="btn-voltar"
+          onclick="window.location = 'pagina1_games.html'"
+        >
+          Voltar
+        </button>
+      </div>
+    </form>
+
+    <footer>
+      <p>Projeto Acadêmico - Games Online &copy; 2025</p>
+    </footer>
+  </body>
+</html>
