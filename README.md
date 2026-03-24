@@ -5,7 +5,7 @@ Repositório com atividades e projetos desenvolvidos durante o curso de Engenhar
 ## 📁 Estrutura
 - Criação de Sites (HTML, CSS, JS)
 - Algoritmos (VisualG)
-
+- Gerenciadores de conteúdo (WordPress)
 ## 🚀 Tecnologias
 - HTML
 - CSS
