@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato – TecnoWorld</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">&lt;TecnoWorld/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="areas.html">Áreas</a></li>
+        <li><a href="impacto.html">Impacto</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-hero">
+      <span class="tag">Fale Conosco</span>
+      <h1>Entre em Contato</h1>
+      <p>Tem alguma dúvida, sugestão ou quer colaborar com o TecnoWorld? Preencha o formulário abaixo.</p>
+    </div>
+
+    <!-- ÂNCORAS -->
+    <div style="text-align: center; margin-bottom: 32px;">
+      <a href="#form-contato" class="anchor-link">Formulário de Contato</a>
+      <a href="#newsletter" class="anchor-link">Newsletter</a>
+      <a href="#enquete" class="anchor-link">Enquete</a>
+    </div>
+
+    <!-- FORMULÁRIO PRINCIPAL -->
+    <section id="form-contato">
+      <h2 class="section-title">📬 Formulário de Contato</h2>
+      <p class="section-sub">Responderemos em até 48 horas</p>
+
+      <div class="form-card">
+        <form action="#" method="post">
+
+          <!-- DADOS PESSOAIS -->
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="form-group">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" />
+            </div>
+
+            <div class="form-group">
+              <label>Você é: *</label>
+              <div class="radio-group">
+                <label><input type="radio" name="perfil" value="estudante" /> Estudante</label>
+                <label><input type="radio" name="perfil" value="professor" /> Professor(a)</label>
+                <label><input type="radio" name="perfil" value="profissional" /> Profissional de TI</label>
+                <label><input type="radio" name="perfil" value="curioso" /> Curioso(a) sobre tecnologia</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- ASSUNTO DA MENSAGEM -->
+          <fieldset>
+            <legend>Assunto</legend>
+
+            <div class="form-group">
+              <label for="assunto">Tipo de mensagem *</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">– Selecione –</option>
+                <option value="duvida">Dúvida sobre conteúdo</option>
+                <option value="sugestao">Sugestão de melhoria</option>
+                <option value="parceria">Proposta de parceria</option>
+                <option value="erro">Reportar erro no site</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Temas de interesse (marque todos que se aplicam):</label>
+              <div class="check-group">
+                <label><input type="checkbox" name="tema" value="ia" /> Inteligência Artificial</label>
+                <label><input type="checkbox" name="tema" value="robotica" /> Robótica</label>
+                <label><input type="checkbox" name="tema" value="biotecnologia" /> Biotecnologia</label>
+                <label><input type="checkbox" name="tema" value="computacao" /> Computação em Nuvem</label>
+                <label><input type="checkbox" name="tema" value="seguranca" /> Segurança Digital</label>
+                <label><input type="checkbox" name="tema" value="outro" /> Outro</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- MENSAGEM -->
+          <fieldset>
+            <legend>Sua Mensagem</legend>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="como-conheceu">Como você conheceu o TecnoWorld?</label>
+              <select id="como-conheceu" name="como-conheceu">
+                <option value="">– Selecione –</option>
+                <option value="busca">Pesquisa no Google</option>
+                <option value="amigo">Indicação de amigo</option>
+                <option value="rede">Redes sociais</option>
+                <option value="professor">Professor(a)</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div style="margin-top: 8px;">
+            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            <button type="reset" class="btn btn-secondary">Limpar formulário</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter">
+      <h2 class="section-title">📧 Assine nossa Newsletter</h2>
+      <p class="section-sub">Receba as novidades da tecnologia direto no seu e-mail</p>
+
+      <div class="form-card" style="max-width: 480px; margin: 0;">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Dados para Newsletter</legend>
+
+            <div class="form-group">
+              <label for="nl-nome">Seu nome</label>
+              <input type="text" id="nl-nome" name="nl-nome" placeholder="Como quer ser chamado(a)?" />
+            </div>
+
+            <div class="form-group">
+              <label for="nl-email">E-mail *</label>
+              <input type="email" id="nl-email" name="nl-email" placeholder="seuemail@exemplo.com" required />
+            </div>
+
+            <div class="form-group">
+              <label>Frequência de e-mails:</label>
+              <div class="radio-group">
+                <label><input type="radio" name="frequencia" value="semanal" checked /> Semanal</label>
+                <label><input type="radio" name="frequencia" value="quinzenal" /> Quinzenal</label>
+                <label><input type="radio" name="frequencia" value="mensal" /> Mensal</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Conteúdos desejados:</label>
+              <div class="check-group">
+                <label><input type="checkbox" name="nl-tema" value="noticias" checked /> Notícias de tecnologia</label>
+                <label><input type="checkbox" name="nl-tema" value="tutoriais" /> Tutoriais e dicas</label>
+                <label><input type="checkbox" name="nl-tema" value="eventos" /> Eventos e cursos</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Assinar Newsletter</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ENQUETE -->
+    <section id="enquete">
+      <h2 class="section-title">📊 Enquete da Semana</h2>
+      <p class="section-sub">Qual área tecnológica você acha mais promissora?</p>
+
+      <div class="form-card" style="max-width: 480px; margin: 0;">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Vote agora</legend>
+
+            <div class="form-group">
+              <label>Área mais promissora para o futuro:</label>
+              <div class="radio-group">
+                <label><input type="radio" name="enquete" value="ia" /> 🤖 Inteligência Artificial</label>
+                <label><input type="radio" name="enquete" value="quantum" /> ⚛️ Computação Quântica</label>
+                <label><input type="radio" name="enquete" value="bio" /> 🧬 Biotecnologia</label>
+                <label><input type="radio" name="enquete" value="espacial" /> 🚀 Tecnologia Espacial</label>
+                <label><input type="radio" name="enquete" value="energia" /> ☀️ Energia Renovável</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="comentario-enquete">Comentário (opcional)</label>
+              <textarea id="comentario-enquete" name="comentario-enquete" placeholder="Por que você escolheu essa área?" style="min-height: 80px;"></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Votar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- LINKS ÚTEIS NO FINAL -->
+    <section>
+      <h2 class="section-title">🔗 Links Rápidos</h2>
+      <p class="section-sub">Explore mais conteúdos do TecnoWorld e da web</p>
+      <ul class="styled">
+        <li><a href="index.html">🏠 Página Inicial</a></li>
+        <li><a href="historia.html">🏛️ História da Tecnologia</a></li>
+        <li><a href="areas.html">🔬 Áreas da Tecnologia</a></li>
+        <li><a href="impacto.html">🌍 Impacto na Sociedade</a></li>
+        <li><a href="https://www.canaltech.com.br" target="_blank">📰 CanalTech – Notícias externas</a></li>
+        <li><a href="https://www.mit.edu" target="_blank">🎓 MIT – Pesquisas avançadas</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 TecnoWorld · <a href="index.html">Voltar ao início</a> · Projeto Acadêmico – Disciplina: Criação de Sites</p>
+    </div>
+  </footer>
+
+</body>
+</html>
